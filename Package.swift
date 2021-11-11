@@ -1,27 +1,17 @@
-//
-//  Package.swift
-//  CHIPageControl
-//
-//  Created by Andrei Sava on 11.11.2021.
-//  Copyright © 2021 chi.lv. All rights reserved.
-//
+// swift-tools-version:5.3
+// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "CHIPageControl",
     platforms: [
-        .iOS(.v8),
+        .iOS(.v8)
     ],
     products: [
-        .library(name: "CHIPageControl", targets: ["CHIPageControl"]),
-    ],
-    dependencies: [
-        // no dependencies
+        .library(name: "CHIPageControl", targets: ["CHIPageControl"])
     ],
     targets: [
-        .target(
-            name: "CHIPageControl",
-            dependencies: []),
+        .target(name: "CHIPageControl", dependencies: []),
     ]
 )
